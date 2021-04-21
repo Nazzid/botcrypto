@@ -24,7 +24,7 @@ let handler  = async (m, { conn }) => {
 	axios.get('https://indodax.com/api/summaries')
 		.then(async res => {
 			doge = res.data.tickers.doge_idr
-			buffer = await getBuffer('https://nurutomo.herokuapp.com/api/ssweb?url=https%3A%2F%2Findodax.com%2Fchart%2FDOGEIDR&full=true&delay=3000&type=jpeg')
+			buffer = await getBuffer('https://nurutomo.herokuapp.com/api/ssweb?url=https%3A%2F%2Findodax.com%2Fchart%2FDOGEIDR&full=true&delay=3000&type=png')
 			text = `*Dogecoin ~ Nazzbot*\nHarga Terakhir : ${doge.last}\nTertinggi : ${doge.high}\nTerendah : ${doge.low}`
 			conn.sendMessage(m.chat, buffer, MessageType.image, {caption: text})
 			
