@@ -42,8 +42,8 @@ let handler = async(m, { conn, args }) => {
 }
 
 handler.tags = ['Crypto']
-handler.help = ['indodax <query>']
-handler.command = /^indodax$/i
+handler.help = ['binance <query>']
+handler.command = /^binance/i
 handler.owner = false
 handler.mods = false
 handler.premium = false
