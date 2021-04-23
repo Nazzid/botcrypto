@@ -1,7 +1,7 @@
 {
-  "name": "wabot-aq",
+  "name": "Bot Crypto",
   "version": "1.6.0",
-  "description": "Customizable WhatsApp Bot",
+  "description": "Bot Crypto",
   "depecrated": false,
   "main": "index.js",
   "directories": {
@@ -13,22 +13,17 @@
     "start": "node index.js",
     "test": "node test.js"
   },
-  "keywords": [
-    "termux-whatsapp-bot",
-    "whatsapp-bot",
-    "whatsapp",
-    "js-whatsapp"
-  ],
-  "homepage": "https://github.com/Nurutomo/wabot-aq",
+  "keywords": [],
+  "homepage": "https://github.com/Nazzid/botcrypto",
   "author": {
-    "name": "Nurutomo"
+    "name": "Nazzid"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Nurutomo/wabot-aq.git"
+    "url": "git+https://github.com/Nazzid/botcrypto.git"
   },
   "bugs": {
-    "url": "https://github.com/Nurutomo/wabot-aq/issues"
+    "url": "https://github.com/Nazzid/botcrypto/issues"
   },
   "license": "GPL-3.0-or-later",
   "dependencies": {
