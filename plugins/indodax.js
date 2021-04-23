@@ -19,7 +19,7 @@ const getBuffer = async(url, options) => {
         console.log(`Error : ${e}`)
     }
 }
-let handler = async(m, { conn }) => {
+let handler = async(m, { conn, args }) => {
     if (!args[0]) throw 'Tulis Query nya ngab!'
     linkchart = eChart(args[0])
     if (!linkchart) throw 'Query tidak tersedia'
