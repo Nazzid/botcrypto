@@ -27,7 +27,7 @@ let handler = async(m, { conn, args }) => {
             for(i = 0; i < res.data.length; i++){
               data = res.data[i]
               if(data.symbol.toLowerCase() == argc){
-                text = `*${data.symbol} ~ Indodax*\nHarga Terakhir : ${data.price}`
+                text = `*${data.symbol} ~ Binance*\nHarga Terakhir : ${data.price}`
                 try {
                   buffer = await getBuffer(`https://nurutomo.herokuapp.com/api/ssweb?url=https://id.tradingview.com/chart/?symbol=BINANCE:${data.symbol}&full=true&delay=3000&type=png`)
                   await conn.sendMessage(m.chat, buffer, MessageType.image, { caption: text })
